@@ -74,7 +74,7 @@ st.markdown(f"""
     <div class="header-left" style="display:flex; align-items:center; gap:1.2rem;">
         {logo_img}
         <div>
-            <div class="header-title" style="color:white; font-size:2.2rem; font-weight:700; line-height:1.2; margin:0; letter-spacing:-0.5px;">Plateforme intelligente d'analyse et d'aide à la décision</div>
+            <div class="header-title" style="color:white; font-size:2.2rem; font-weight:700; line-height:1.2; margin:0; letter-spacing:-0.5px;">Plateforme intelligente d'aide à la décision</div>
             <div class="header-subtitle" style="color:#B0C4DE; font-size:1.1rem; font-weight:300; margin:0.1rem 0 0 0;">De la donnée à la décision : analyses, prédictions et intelligence artificielle générative.</div>
         </div>
     </div>
