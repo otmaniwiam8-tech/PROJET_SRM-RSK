@@ -14,7 +14,7 @@ COLORS = {
     'dark_grey': '#0A2540'
 }
 
-PAGE_TITLE = "Dashboard SRM-RSK"
+PAGE_TITLE = "SRM-PREDICTION-AI"
 PAGE_ICON = "💧⚡"
 LAYOUT = "wide"
 # Noms des colonnes possibles
