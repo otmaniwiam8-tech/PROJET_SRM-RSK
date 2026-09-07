@@ -17,3 +17,5 @@ env/
 # Divers
 .DS_Store
 *.log
+
+api_secrets.py
