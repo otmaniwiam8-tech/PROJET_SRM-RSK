@@ -1,5 +1,3 @@
-# SRM Dashboard - Plateforme d'analyse et de prédiction
-
 # Plateforme intelligente d'analyse et d'aide à la décision — SRM-RSK
 
 Application web développée pour la **Régie des Eaux et d'Électricité (SRM-RSK)**, permettant l'analyse, la prédiction et la génération de rapports intelligents autour de la consommation d'eau et d'électricité.
@@ -55,7 +53,7 @@ pip install -r requirements.txt
 
 3. Configurer la clé API
 
-Créer un fichier `.env` à la racine du projet (voir `.env.example` pour le modèle) :
+Créer un fichier `.env` à la racine du projet, contenant :
 ```
 GEMINI_API_KEY=votre_cle_api_ici
 ```
@@ -73,24 +71,28 @@ L'application sera accessible sur `http://localhost:8501`.
 SRM/
 ├── app.py                  # Point d'entrée de l'application
 ├── config.py                # Configuration générale
-├── requirements.txt          # Dépendances Python
+├── data_loader.py             # Chargement des données
+├── charts.py                   # Génération des graphiques
+├── css_style.py                 # Style visuel de l'application
+├── sidebar.py                    # Menu de navigation
+├── api_secrets.py                 # Gestion de la clé API (non versionné)
+├── requirements.txt                # Dépendances Python
 ├── components/
-│   ├── accueil.py            # Page d'accueil
-│   ├── nettoyage.py          # Nettoyage des données
-│   ├── analyse.py            # Analyse historique
-│   ├── kpi.py                 # KPI actuels
-│   ├── prediction.py          # Prédiction de consommation
-│   ├── kpi_predictifs.py      # KPI prédictifs
-│   ├── facteurs_influence.py  # Facteurs d'influence
-│   ├── rapport_ia.py          # Rapport généré par IA
-│   └── train_model.py         # Entraînement du modèle
-├── assets/                  # Logos et ressources visuelles
-└── charts.py                 # Fonctions de génération de graphiques
+│   ├── accueil.py                   # Page d'accueil
+│   ├── nettoyage.py                  # Nettoyage des données
+│   ├── analyse.py                     # Analyse historique
+│   ├── kpi.py                          # KPI actuels
+│   ├── prediction.py                    # Prédiction de consommation
+│   ├── kpi_predictifs.py                 # KPI prédictifs
+│   ├── facteurs_influence.py              # Facteurs d'influence
+│   ├── rapport_ia.py                       # Rapport généré par IA
+│   └── train_model.py                       # Entraînement du modèle
+└── assets/                                   # Logos et ressources visuelles
 ```
 
 ## Sécurité
 
-Les clés API et informations sensibles sont gérées via des variables d'environnement (fichier `.env`, non versionné) et ne sont jamais exposées dans le code source.
+Les clés API et informations sensibles sont gérées via des variables d'environnement (fichier `.env`) et ne sont jamais exposées dans le code source ni versionnées sur GitHub.
 
 ## Auteur
 
