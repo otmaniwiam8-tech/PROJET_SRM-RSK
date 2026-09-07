@@ -18,4 +18,3 @@ env/
 .DS_Store
 *.log
 
-api_secrets.py
